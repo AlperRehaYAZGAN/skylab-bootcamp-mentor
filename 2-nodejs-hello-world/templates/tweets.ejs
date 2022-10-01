@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTU-Skylab Tweets</title>
+</head>
+<body>
+    <h1>YTU-Skylab Tweets</h1>
+    <a href="/create">Create Tweet</a>
+    <ul>
+        <% tweets.forEach(tweet => { %>
+            <li>
+                <h3><%= tweet.username %></h3>
+                <p><%= tweet.tweet %></p>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
